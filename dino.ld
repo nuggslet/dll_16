@@ -34,8 +34,6 @@ SECTIONS
 		*(.MIPS.abiflags)
     }
 
-    INCLUDE dllimport.ld
-
     /*========================================= */
     /* Stabs debugging sections.                */
     /*========================================= */

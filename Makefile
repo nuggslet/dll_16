@@ -23,9 +23,9 @@ GCC = $(CROSS)gcc
 CC = $(IDO)/cc
 
 DEFINE_CFLAGS = -D_LANGUAGE_C -D_MIPS_SZLONG=32 -DDLL=$(DLL)
-INCLUDE_CFLAGS = -I . -I include -I $(LIBDINO)/include
+INCLUDE_CFLAGS = -I . -I include
 ASFLAGS = -EB -mtune=vr4300 -march=vr4300 -Iinclude -modd-spreg
-LDFLAGS = -nostartfiles -nodefaultlibs -r -L $(LIBDINO) -T dino.ld --emit-relocs
+LDFLAGS = -nostartfiles -nodefaultlibs -r -T dino.ld --emit-relocs
 
 OPTFLAGS := -O2 -g3
 
